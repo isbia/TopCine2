@@ -58,6 +58,24 @@
 /* RESET
 /*---------------------------------------*/
 
+.h1,
+.h2,
+.h3{color: var(--white);
+    line-height: 1.2;
+}
+
+.h1{
+    font-size: var(--fs-1);
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-6);
+}
+
 a {
     text-decoration: none;
 }
@@ -213,4 +231,38 @@ button{
 
 .overlay.active{
     pointer-events: all;
+}
+
+/*---------------------------------------*/
+/* BANNER
+/*---------------------------------------*/
+
+.hero{
+    background-image: url('../img/a\ freira.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section-padding);
+}
+
+.hero-content{
+    margin-top: 60px;
+}
+
+.hero-subtitle{
+    color: var(--citrine);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.hero-title{
+    margin: 30px;
+}
+
+.hero-title > strong{
+    color: var(--citrine);
 }
